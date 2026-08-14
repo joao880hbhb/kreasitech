@@ -208,8 +208,10 @@
 <body class="bg-bg text-txt leading-relaxed overflow-x-hidden">
 
 <!-- NAVBAR -->
-<header id="navHeader" class="fixed top-0 left-0 right-0 z-[100] py-5 transition-all duration-300 border-b border-transparent">
-  <div class="max-w-wrap mx-auto px-7 flex items-center justify-between">
+<header id="navHeader" class="fixed top-0 left-0 right-0 z-[100] py-5 transition-all duration-300">
+  <!-- Navbar background blur overlay -->
+  <div id="navBg" class="absolute inset-0 -z-10 transition-all duration-300 opacity-0 bg-[#F7F6F1]/90 backdrop-blur-[14px] border-b border-transparent"></div>
+  <div class="max-w-wrap mx-auto px-7 flex items-center justify-between relative z-10">
  <a href="#top" class="flex items-center gap-2">
   <div class="h-16 w-16 overflow-hidden rounded-full">
     <img
@@ -687,17 +689,18 @@
 <script>
   // Navbar scroll state
   const navHeader = document.getElementById('navHeader');
+  const navBg = document.getElementById('navBg');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
-      navHeader.classList.add('py-3', 'border-b-line');
-      navHeader.style.background = 'rgba(247,246,241,0.88)';
-      navHeader.style.backdropFilter = 'blur(14px)';
-      navHeader.style.borderBottomColor = '#E7E3D8';
+      navHeader.classList.remove('py-5');
+      navHeader.classList.add('py-3');
+      navBg.classList.remove('opacity-0', 'border-transparent');
+      navBg.classList.add('opacity-100', 'border-line');
     } else {
-      navHeader.classList.remove('py-3', 'border-b-line');
-      navHeader.style.background = '';
-      navHeader.style.backdropFilter = '';
-      navHeader.style.borderBottomColor = 'transparent';
+      navHeader.classList.remove('py-3');
+      navHeader.classList.add('py-5');
+      navBg.classList.remove('opacity-100', 'border-line');
+      navBg.classList.add('opacity-0', 'border-transparent');
     }
   });
 
