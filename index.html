@@ -160,17 +160,7 @@
   /* Burger mobile */
   .burger span { transition: 0.3s; }
 
-  /* Mobile nav */
-  @media (max-width: 640px) {
-    .mobile-nav {
-      position: fixed; top: 0; right: 0; height: 100vh; width: 74%;
-      background: #ffffff; flex-direction: column; justify-content: center;
-      gap: 28px; transform: translateX(100%); transition: transform 0.35s ease;
-      border-left: 1px solid #E7E3D8; z-index: 100; display: flex;
-      align-items: center; padding: 2rem;
-    }
-    .mobile-nav.open { transform: translateX(0); }
-  }
+  /* Mobile nav styles handled by Tailwind utility classes */
 
   /* Service card overlay gradient */
   .service-card::before {
@@ -229,12 +219,12 @@
     >
   </div>
 </a>
-    <nav id="navLinks" class="hidden sm:flex items-center gap-9 mobile-nav">
+    <nav id="navLinks" class="fixed inset-y-0 right-0 w-[74%] bg-surface border-l border-line flex flex-col items-center justify-center gap-7 transition-transform duration-300 z-[100] translate-x-full sm:translate-x-0 sm:static sm:w-auto sm:bg-transparent sm:border-0 sm:flex-row sm:gap-9 sm:p-0">
       <a href="#layanan" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Layanan</a>
       <a href="#paket" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Paket</a>
       <a href="#karya" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Karya</a>
       <a href="#konsultasi" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Konsultasi</a>
-      <a href="#konsultasi" class="hidden sm:inline-flex px-5 py-2.5 rounded-full bg-cyan text-white font-bold text-sm hover:bg-[#1c1cd6] hover:-translate-y-0.5 hover:shadow-[0_12px_26px_rgba(39,39,242,0.35)] transition-all duration-200 whitespace-nowrap">Mulai Proyek</a>
+      <a href="#konsultasi" class="sm:inline-flex px-5 py-2.5 rounded-full bg-cyan text-white font-bold text-sm hover:bg-[#1c1cd6] hover:-translate-y-0.5 hover:shadow-[0_12px_26px_rgba(39,39,242,0.35)] transition-all duration-200 whitespace-nowrap">Mulai Proyek</a>
     </nav>
     <div id="burger" class="flex sm:hidden flex-col gap-[5px] cursor-pointer z-[101]">
       <span class="w-6 h-0.5 bg-txt rounded-sm"></span>
@@ -715,9 +705,13 @@
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    navLinks.classList.toggle('translate-x-full');
+    navLinks.classList.toggle('translate-x-0');
   });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.add('translate-x-full');
+    navLinks.classList.remove('translate-x-0');
+  }));
 
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal-el');
