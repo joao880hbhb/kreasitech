@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KreasiTech — Jasa Pembuatan Website Profesional | Company Profile, Toko Online, Kasir & Bengkel</title>
+<meta name="description" content="KreasiTech adalah jasa pembuatan website profesional untuk company profile, toko online, sistem kasir & laundry, hingga bengkel & otomotif. Mulai dari Rp 500rb. Konsultasi gratis via WhatsApp.">
+<meta name="keywords" content="jasa pembuatan website, jasa website murah, website company profile, website toko online, website kasir laundry, jasa website bengkel, jasa website mahasiswa, kreasitech">
+<meta name="author" content="KreasiTech">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kreasitech.id/">
+<link rel="icon" type="image/png" href="image/kreasi.png">
+<link rel="apple-touch-icon" href="image/kreasi.png">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="KreasiTech — Jasa Pembuatan Website Profesional">
+<meta property="og:description" content="Solusi digital untuk beragam usaha: company profile, toko online, kasir & laundry, hingga bengkel & otomotif. Konsultasi gratis via WhatsApp.">
+<meta property="og:image" content="https://kreasitech.id/image/kreasi.png">
+<meta property="og:url" content="https://kreasitech.id/">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KreasiTech — Jasa Pembuatan Website Profesional">
+<meta name="twitter:description" content="Company profile, toko online, kasir & laundry, bengkel. Mulai dari Rp 500rb.">
+<meta name="twitter:image" content="https://kreasitech.id/image/kreasi.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#F7F6F2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "KreasiTech",
+  "description": "Jasa pembuatan website profesional: company profile, toko online, sistem kasir & laundry, dan bengkel & otomotif.",
+  "areaServed": "ID",
+  "priceRange": "Rp500.000 - Rp6.000.000",
+  "url": "https://kreasitech.id/"
+}
+</script>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#F7F6F1',
+          surface: '#ffffff',
+          'surface-2': '#EFECE3',
+          line: '#E7E3D8',
+          gold: '#141414',
+          cyan: '#2727F2',
+          'cyan-dim': 'rgba(76,79,242,0.10)',
+          lime: '#DBDDFF',
+          txt: '#161616',
+          muted: '#6b6f76',
+          'muted-2': '#9a9da3',
+          wa: '#25d366',
+        },
+        fontFamily: {
+          sora: ['Sora', 'sans-serif'],
+          inter: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+        borderRadius: {
+          card: '22px',
+        },
+        maxWidth: {
+          wrap: '1180px',
+        },
+        boxShadow: {
+          main: '0 20px 45px rgba(20,20,16,0.08)',
+          lg: '0 30px 70px rgba(20,20,16,0.12)',
+        },
+        keyframes: {
+          'pulse-dot': {
+            '0%, 100%': { opacity: '1' },
+            '50%': { opacity: '0.4' },
+          },
+          float: {
+            '0%, 100%': { transform: 'translateY(0px)' },
+            '50%': { transform: 'translateY(-14px)' },
+          },
+          shimmer: {
+            '0%': { backgroundPosition: '200% 0' },
+            '100%': { backgroundPosition: '-200% 0' },
+          },
+          reveal: {
+            to: { opacity: '1', transform: 'translateY(0)' },
+          },
+          blink: {
+            '50%': { opacity: '0' },
+          },
+          ring: {
+            '0%': { transform: 'scale(1)', opacity: '0.7' },
+            '100%': { transform: 'scale(1.9)', opacity: '0' },
+          },
+        },
+        animation: {
+          'pulse-dot': 'pulse-dot 2s infinite',
+          float: 'float 6s ease-in-out infinite',
+          shimmer: 'shimmer 2.4s infinite',
+          reveal: 'reveal 0.6s ease forwards',
+          blink: 'blink 1s step-end infinite',
+          ring: 'ring 2s infinite',
+        },
+      },
+    },
+  }
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  img { max-width: 100%; display: block; }
+
+  /* Background texture */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(39,39,242,0.10), transparent 45%),
+      radial-gradient(circle at 85% 20%, rgba(39,39,242,0.06), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Nav link underline */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px;
+    background: #2727F2; transition: width 0.25s;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  /* Scroll reveal */
+  .reveal-el { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal-el.in { opacity: 1; transform: translateY(0); }
+
+  /* Hero accent underline */
+  .accent {
+    background-image: linear-gradient(120deg, #DBDDFF 0%, #DBDDFF 100%);
+    background-repeat: no-repeat; background-size: 100% 38%; background-position: 0 90%;
+    padding: 0 2px;
+  }
+
+  /* Hero image float */
+  .hero-img-wrap { animation: float-simple 6s ease-in-out infinite; }
+  @keyframes float-simple {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+
+  /* Hero badge float */
+  .hero-badge-anim { animation: float-simple 6s ease-in-out infinite; animation-delay: 0.3s; }
+
+  /* Burger mobile */
+  .burger span { transition: 0.3s; }
+
+  /* Mobile nav styles handled by Tailwind utility classes */
+
+  /* Service card overlay gradient */
+  .service-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,15,28,0) 25%, rgba(10,15,28,0.9) 85%);
+    z-index: 1;
+  }
+
+  /* Karya card overlay gradient */
+  .karya-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,15,28,0) 35%, rgba(10,15,28,0.92) 90%);
+    z-index: 1;
+  }
+
+  /* CTA glow */
+  .final-cta-bg::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(39,39,242,0.10), transparent 60%);
+  }
+
+  /* WA float ring */
+  .wa-float::before {
+    content: ""; position: absolute; inset: 0; border-radius: 50%;
+    border: 2px solid #25d366; animation: ring 2s infinite;
+  }
+  @keyframes ring {
+    0% { transform: scale(1); opacity: 0.7; }
+    100% { transform: scale(1.9); opacity: 0; }
+  }
+
+  /* Konsultasi decoration */
+  .konsultasi-deco::after {
+    content: ""; position: absolute; width: 340px; height: 340px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(39,39,242,0.14), transparent 70%);
+    top: -100px; right: -100px; pointer-events: none;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+  }
+</style>
+</head>
+<body class="bg-bg text-txt leading-relaxed overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header id="navHeader" class="fixed top-0 left-0 right-0 z-[100] py-5 transition-all duration-300">
+  <!-- Navbar background blur overlay -->
+  <div id="navBg" class="absolute inset-0 -z-10 transition-all duration-300 opacity-0 bg-[#F7F6F1]/90 backdrop-blur-[14px] border-b border-transparent"></div>
+  <div class="max-w-wrap mx-auto px-7 flex items-center justify-between relative z-10">
+ <a href="#top" class="flex items-center gap-2">
+  <div class="h-16 w-16 overflow-hidden rounded-full">
+    <img
+      src="image/kreasi.png"
+      alt="KreasiTech Logo"
+      class="h-full w-full object-cover scale-150"
+    >
+  </div>
+</a>
+    <nav id="navLinks" class="fixed inset-y-0 right-0 w-[74%] bg-surface border-l border-line flex flex-col items-center justify-center gap-7 transition-transform duration-300 z-[100] translate-x-full sm:translate-x-0 sm:static sm:w-auto sm:bg-transparent sm:border-0 sm:flex-row sm:gap-9 sm:p-0">
+      <a href="#layanan" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Layanan</a>
+      <a href="#paket" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Paket</a>
+      <a href="#karya" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Karya</a>
+      <a href="#konsultasi" class="nav-link text-sm text-muted font-medium hover:text-txt transition-colors duration-200">Konsultasi</a>
+      <a href="#konsultasi" class="sm:inline-flex px-5 py-2.5 rounded-full bg-cyan text-white font-bold text-sm hover:bg-[#1c1cd6] hover:-translate-y-0.5 hover:shadow-[0_12px_26px_rgba(39,39,242,0.35)] transition-all duration-200 whitespace-nowrap">Mulai Proyek</a>
+    </nav>
+    <div id="burger" class="flex sm:hidden flex-col gap-[5px] cursor-pointer z-[101]">
+      <span class="w-6 h-0.5 bg-txt rounded-sm"></span>
+      <span class="w-6 h-0.5 bg-txt rounded-sm"></span>
+      <span class="w-6 h-0.5 bg-txt rounded-sm"></span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="pt-[170px] pb-[100px] max-w-wrap mx-auto px-7 grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-[60px] items-center">
+    <div>
+      <!-- <div class="inline-flex items-center gap-2 py-[7px] px-3.5 rounded-full bg-surface border border-line font-mono text-xs text-cyan mb-5">
+        <span class="w-1.5 h-1.5 rounded-full bg-cyan shadow-[0_0_0_3px_rgba(39,39,242,0.2)] animate-pulse-dot"></span>
+        kreasitech.id — digital agency
+      </div> -->
+      <h1 class="text-[clamp(2.2rem,4.2vw,3.4rem)] font-bold leading-[1.08] mb-5">
+        Website yang Bikin Bisnis Anda <span class="accent">Naik Kelas</span>
+      </h1>
+      <p class="text-base text-muted max-w-[490px] mb-8">
+        Kami merancang & membangun website company profile, toko online, sistem kasir, hingga bengkel & otomotif — cepat, rapi, dan siap tampil profesional di mata pelanggan.
+      </p>
+      <div class="flex gap-3.5 flex-wrap">
+        <a class="inline-flex items-center gap-2 py-3.5 px-6 rounded-full font-bold text-sm bg-wa text-white hover:-translate-y-[3px] hover:shadow-[0_14px_28px_rgba(37,211,102,0.28)] transition-all duration-200 border border-transparent" href="https://wa.me/6285961084254?text=Halo%20KreasiTech%2C%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.19-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.53-3.69 8.26-8.24 8.26Zm4.51-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.42.06-.65.31-.22.24-.85.84-.85 2.03 0 1.2.87 2.36 1 2.52.12.17 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+          Konsultasi Gratis
+        </a>
+        <a class="inline-flex items-center gap-2 py-3.5 px-6 rounded-full font-bold text-sm border border-line text-txt bg-surface hover:-translate-y-[3px] hover:border-cyan transition-all duration-200" href="#layanan">
+          Lihat Layanan
+        </a>
+      </div>
+      <!-- <div class="flex gap-8 mt-10 flex-wrap">
+        <div>
+          <strong class="block font-sora text-2xl font-bold">150+</strong>
+          <span class="text-xs text-muted-2 font-mono">WEBSITE RILIS</span>
+        </div>
+        <div>
+          <strong class="block font-sora text-2xl font-bold">4.9/5</strong>
+          <span class="text-xs text-muted-2 font-mono">RATING KLIEN</span>
+        </div>
+        <div>
+          <strong class="block font-sora text-2xl font-bold">&lt;7 HARI</strong>
+          <span class="text-xs text-muted-2 font-mono">RATA-RATA PENGERJAAN</span>
+        </div>
+      </div> -->
+    </div>
+    <div class="relative flex justify-center items-center">
+      <!-- Hero badge -->
+      <!-- <div class="hero-badge-anim absolute -top-6 -left-4 z-10 flex items-end gap-1.5">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="w-[30px] h-[30px] text-cyan -rotate-[8deg] translate-y-1.5"><path d="M12 3v14M12 17l-5-5M12 17l5-5"/></svg>
+        <span class="inline-flex items-center gap-2 bg-cyan text-white font-bold text-sm py-2.5 px-4 rounded-full shadow-[0_14px_26px_rgba(76,79,242,0.3)] whitespace-nowrap">
+          <span class="w-[22px] h-[22px] rounded-full bg-gold flex items-center justify-center text-[0.7rem] text-white">✦</span>
+          kreasitech.id
+        </span>
+      </div> -->
+      <!-- Hero image -->
+      <div class="hero-img-wrap   ">
+        <img src="image/header.png" alt="Preview dashboard website profesional KreasiTech" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section class="py-28 relative z-[1]" id="layanan">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="max-w-[640px] mx-auto mb-14 text-center reveal-el">
+        <!-- <span class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-lg bg-surface border border-line font-mono text-xs text-cyan mb-4 before:content-['●'] before:text-wa before:text-[0.6rem]">
+          kreasitech.id/layanan
+        </span> -->
+        <h2 class="text-[clamp(1.7rem,3vw,2.4rem)] font-bold mb-3.5">Solusi Digital untuk Beragam Usaha</h2>
+        <p class="text-muted text-base">Empat jenis website utama yang paling sering dibutuhkan pelaku usaha — dari yang baru mulai sampai yang siap bertransaksi otomatis.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Company Profile -->
+        <div class="service-card relative rounded-card overflow-hidden h-[340px] border border-line shadow-main hover:-translate-y-2 hover:shadow-lg transition-all duration-400 reveal-el">
+          <img src="image/compo.png" alt="Contoh tampilan website company profile perusahaan" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-all duration-600 saturate-[0.85] brightness-75 hover:scale-[1.08] hover:saturate-100 hover:brightness-[0.65]">
+          <span class="absolute top-[18px] left-[18px] z-[2] py-1.5 px-3 rounded-full text-[0.72rem] font-bold text-white font-mono shadow-[0_8px_18px_rgba(0,0,0,0.18)] bg-cyan">Company Profile</span>
+          <div class="absolute bottom-0 left-0 right-0 z-[2] p-6 flex items-end justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-bold mb-1.5 leading-tight text-white">Website Company Profile</h3>
+              <p class="text-sm text-muted max-w-[230px]">Bangun kredibilitas & kepercayaan instan di mata calon klien.</p>
+            </div>
+            <a href="#konsultasi" class="arrow-btn flex-shrink-0 w-[42px] h-[42px] rounded-full flex items-center justify-center bg-white/[0.08] border border-line hover:bg-gold hover:rotate-45 transition-all duration-300" aria-label="Konsultasi Company Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-[17px] h-[17px] text-white"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Toko Online -->
+        <div class="service-card relative rounded-card overflow-hidden h-[340px] border border-line shadow-main hover:-translate-y-2 hover:shadow-lg transition-all duration-400 reveal-el">
+          <img src="image/toko.png" alt="Contoh tampilan website toko online dengan keranjang belanja" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-all duration-600 saturate-[0.85] brightness-75 hover:scale-[1.08] hover:saturate-100 hover:brightness-[0.65]">
+          <span class="absolute top-[18px] left-[18px] z-[2] py-1.5 px-3 rounded-full text-[0.72rem] font-bold text-white font-mono shadow-[0_8px_18px_rgba(0,0,0,0.18)] bg-gold">Toko Online</span>
+          <div class="absolute bottom-0 left-0 right-0 z-[2] p-6 flex items-end justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-bold mb-1.5 leading-tight text-white">Website Toko Online</h3>
+              <p class="text-sm text-muted max-w-[230px]">Jualan 24 jam dengan keranjang belanja & pembayaran otomatis.</p>
+            </div>
+            <a href="#konsultasi" class="arrow-btn flex-shrink-0 w-[42px] h-[42px] rounded-full flex items-center justify-center bg-white/[0.08] border border-line hover:bg-gold hover:rotate-45 transition-all duration-300" aria-label="Konsultasi Toko Online">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-[17px] h-[17px] text-white"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Kasir & Laundry -->
+        <div class="service-card relative rounded-card overflow-hidden h-[340px] border border-line shadow-main hover:-translate-y-2 hover:shadow-lg transition-all duration-400 reveal-el">
+          <img src="image/kasir1.png" alt="Contoh tampilan sistem kasir dan laundry berbasis web" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-all duration-600 saturate-[0.85] brightness-75 hover:scale-[1.08] hover:saturate-100 hover:brightness-[0.65]">
+          <span class="absolute top-[18px] left-[18px] z-[2] py-1.5 px-3 rounded-full text-[0.72rem] font-bold text-white font-mono shadow-[0_8px_18px_rgba(0,0,0,0.18)] bg-[#0F0F9E]">Kasir & Laundry</span>
+          <div class="absolute bottom-0 left-0 right-0 z-[2] p-6 flex items-end justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-bold mb-1.5 leading-tight text-white">Website Kasir & Laundry</h3>
+              <p class="text-sm text-muted max-w-[230px]">Catat transaksi, stok, & antrean cucian dalam satu dashboard.</p>
+            </div>
+            <a href="#konsultasi" class="arrow-btn flex-shrink-0 w-[42px] h-[42px] rounded-full flex items-center justify-center bg-white/[0.08] border border-line hover:bg-gold hover:rotate-45 transition-all duration-300" aria-label="Konsultasi Kasir Laundry">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-[17px] h-[17px] text-white"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Bengkel -->
+        <div class="service-card relative rounded-card overflow-hidden h-[340px] border border-line shadow-main hover:-translate-y-2 hover:shadow-lg transition-all duration-400 reveal-el">
+          <img src="image/bengkel.png" alt="Contoh tampilan website bengkel motor atau mobil" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-all duration-600 saturate-[0.85] brightness-75 hover:scale-[1.08] hover:saturate-100 hover:brightness-[0.65]">
+          <span class="absolute top-[18px] left-[18px] z-[2] py-1.5 px-3 rounded-full text-[0.72rem] font-bold text-white font-mono shadow-[0_8px_18px_rgba(0,0,0,0.18)] bg-[#F97316]">Bengkel</span>
+          <div class="absolute bottom-0 left-0 right-0 z-[2] p-6 flex items-end justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-bold mb-1.5 leading-tight text-white">Website Bengkel & Otomotif</h3>
+              <p class="text-sm text-muted max-w-[230px]">Kelola antrean servis, booking online, & inventori sparepart otomatis.</p>
+            </div>
+            <a href="#konsultasi" class="arrow-btn flex-shrink-0 w-[42px] h-[42px] rounded-full flex items-center justify-center bg-white/[0.08] border border-line hover:bg-gold hover:rotate-45 transition-all duration-300" aria-label="Konsultasi Bengkel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-[17px] h-[17px] text-white"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET -->
+  <section class="py-28 relative z-[1] bg-surface border-t border-b border-line" id="paket">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="max-w-[640px] mx-auto mb-14 text-center reveal-el">
+        <!-- <span class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-lg bg-surface border border-line font-mono text-xs text-cyan mb-4 before:content-['●'] before:text-wa before:text-[0.6rem]">
+          kreasitech.id/paket
+        </span> -->
+        <h2 class="text-[clamp(1.7rem,3vw,2.4rem)] font-bold mb-3.5">Pilih Paket Sesuai Kebutuhan Bisnis Anda</h2>
+        <p class="text-muted text-base">Dari brosur digital sederhana sampai sistem otomasi penuh — dan paket khusus untuk mahasiswa tugas akhir.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
+        <!-- Paket Mahasiswa -->
+        <div class="bg-surface border border-line rounded-card p-7 flex flex-col shadow-main hover:-translate-y-1.5 hover:border-cyan hover:shadow-lg transition-all duration-300 reveal-el">
+          <div class="text-lg font-sora font-bold mb-1.5">Paket Mahasiswa</div>
+          <div class="text-sm text-muted min-h-[52px] mb-4">Khusus tugas akhir / skripsi — fitur setara Paket Sistem, harga & bimbingan ramah kantong mahasiswa.</div>
+          <div class="text-[1.7rem] font-sora font-bold mb-1">Harga fleksibel<span class="text-sm text-muted-2 font-normal font-inter"> </span></div>
+          <ul class="my-5 flex-1 space-y-0">
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Sistem sesuai judul TA (web/mobile)
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Source code lengkap + dokumentasi
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Bimbingan revisi hingga sidang
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Konsultasi teknis via chat
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Desain bebas mirip/plagiat
+            </li>
+          </ul>
+          <div class="price-cta text-center py-3 rounded-full font-bold text-sm border border-line cursor-pointer transition-all duration-250 hover:bg-txt hover:text-bg hover:border-txt" data-pkg="Paket Mahasiswa (mulai Rp 500rb)">Pilih Paket Ini</div>
+        </div>
+
+        <!-- Paket Rintis -->
+        <div class="bg-surface border border-line rounded-card p-7 flex flex-col shadow-main hover:-translate-y-1.5 hover:border-cyan hover:shadow-lg transition-all duration-300 reveal-el">
+          <div class="text-lg font-sora font-bold mb-1.5">Paket Rintis</div>
+          <div class="text-sm text-muted min-h-[52px] mb-4">Landing Page — sempurna untuk usaha yang baru mulai <em>go-online</em> dan butuh kepercayaan pelanggan instan.</div>
+          <div class="text-[1.7rem] font-sora font-bold mb-1">Rp 500 <span class="text-sm text-muted-2 font-normal font-inter"> Ribu</span></div>
+          <ul class="my-5 flex-1 space-y-0">
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Desain premium s/d 5 halaman
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Gratis domain (.com/.id) 1 tahun
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Hosting SSD cepat & aman
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Tombol chat WhatsApp langsung
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Formulir kontak sederhana
+            </li>
+          </ul>
+          <div class="price-cta text-center py-3 rounded-full font-bold text-sm border border-line cursor-pointer transition-all duration-250 hover:bg-txt hover:text-bg hover:border-txt" data-pkg="Paket Rintis (Rp 1,5 Juta)">Pilih Paket Ini</div>
+        </div>
+
+        <!-- Paket Tumbuh (Featured) -->
+        <div class="relative bg-gradient-to-br from-cyan-dim to-surface border border-cyan rounded-card p-7 flex flex-col shadow-main hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 reveal-el">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan text-white text-[0.7rem] font-bold py-1 px-3.5 rounded-full font-mono whitespace-nowrap">★ PALING FAVORIT</span>
+          <div class="text-lg font-sora font-bold mb-1.5">Paket Tumbuh</div>
+          <div class="text-sm text-muted min-h-[52px] mb-4">Katalog Interaktif — solusi lengkap untuk pameran produk/layanan & mendatangkan pesanan otomatis.</div>
+          <div class="text-[1.7rem] font-sora font-bold mb-1">Rp 1,2 <span class="text-sm text-muted-2 font-normal font-inter"> Juta</span></div>
+          <ul class="my-5 flex-1 space-y-0">
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Semua fitur Paket Rintis, plus:
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Desain custom 
+            </li>
+                <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Revisi 6x
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Katalog produk / galeri proyek
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Hosting dan domain .com 1 tahun
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Optimasi SEO dasar (Google friendly)
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Email bisnis profesional
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Bantuan input 20 produk awal
+            </li>
+          </ul>
+          <div class="price-cta text-center py-3 rounded-full font-bold text-sm bg-cyan text-white border border-cyan cursor-pointer transition-all duration-250 hover:bg-[#1c1cd6]" data-pkg="Paket Tumbuh (Rp 3,5 Juta)">Pilih Paket Ini</div>
+        </div>
+
+        <!-- Paket Sistem -->
+        <div class="bg-surface border border-line rounded-card p-7 flex flex-col shadow-main hover:-translate-y-1.5 hover:border-cyan hover:shadow-lg transition-all duration-300 reveal-el">
+          <div class="text-lg font-sora font-bold mb-1.5">Paket Sistem</div>
+          <div class="text-sm text-muted min-h-[52px] mb-4">E-Commerce — infrastruktur web app khusus untuk otomasi transaksi, toko online, & reservasi.</div>
+          <div class="text-[1.7rem] font-sora font-bold mb-1">Mulai Rp 6<span class="text-sm text-muted-2 font-normal font-inter"> Juta</span></div>
+          <ul class="my-5 flex-1 space-y-0">
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Sistem toko online / keranjang belanja
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Integrasi cek ongkir otomatis JNE/JNT
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Terima pembayaran transfer & QRIS
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Atau sistem booking jadwal otomatis
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Dashboard manajemen pesanan
+            </li>
+            <li class="flex gap-2.5 text-sm text-muted py-[7px] items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="flex-shrink-0 w-4 h-4 mt-0.5 text-cyan"><path d="M20 6 9 17l-5-5"/></svg>Keamanan tingkat tinggi (SSL premium)
+            </li>
+          </ul>
+          <div class="price-cta text-center py-3 rounded-full font-bold text-sm border border-line cursor-pointer transition-all duration-250 hover:bg-txt hover:text-bg hover:border-txt" data-pkg="Paket Sistem (mulai Rp 6 Juta)">Pilih Paket Ini</div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONSULTASI -->
+  <section class="py-28 relative z-[1]" id="konsultasi">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="konsultasi-deco grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center bg-surface border border-line rounded-3xl p-8 lg:p-12 overflow-hidden relative shadow-lg reveal-el">
+        <div>
+          <!-- <span class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-lg bg-surface border border-line font-mono text-xs text-cyan mb-4 before:content-['●'] before:text-wa before:text-[0.6rem]">
+            kreasitech.id/konsultasi
+          </span> -->
+          <h2 class="text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold mb-4">Rencanakan Website Anda</h2>
+          <p class="text-muted mb-6 max-w-[380px]">Ceritakan kebutuhan bisnis Anda, tim kami akan menghubungi via WhatsApp untuk diskusi & penawaran dalam 1x24 jam.</p>
+          <ul class="space-y-0">
+            <li class="flex gap-2.5 text-sm text-txt py-2 items-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="text-gold w-[18px] h-[18px] flex-shrink-0"><path d="M20 6 9 17l-5-5"/></svg>Konsultasi & estimasi biaya gratis
+            </li>
+            <li class="flex gap-2.5 text-sm text-txt py-2 items-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="text-gold w-[18px] h-[18px] flex-shrink-0"><path d="M20 6 9 17l-5-5"/></svg>Tanpa komitmen, tanpa biaya tersembunyi
+            </li>
+            <li class="flex gap-2.5 text-sm text-txt py-2 items-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="text-gold w-[18px] h-[18px] flex-shrink-0"><path d="M20 6 9 17l-5-5"/></svg>Respon cepat via WhatsApp
+            </li>
+          </ul>
+        </div>
+        <form class="grid gap-4 relative z-[1]" id="consultForm">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="fname" class="block text-xs text-muted mb-[7px] font-mono">Nama Lengkap</label>
+              <input type="text" id="fname" required placeholder="Nama Anda" class="w-full py-3 px-4 rounded-[10px] bg-bg border border-line text-txt font-inter text-sm outline-none focus:border-cyan focus:shadow-[0_0_0_3px_rgba(76,79,242,0.1)] transition-all duration-200">
+            </div>
+            <div>
+              <label for="fwa" class="block text-xs text-muted mb-[7px] font-mono">Nomor WhatsApp</label>
+              <input type="tel" id="fwa" required placeholder="08xxxxxxxxxx" class="w-full py-3 px-4 rounded-[10px] bg-bg border border-line text-txt font-inter text-sm outline-none focus:border-cyan focus:shadow-[0_0_0_3px_rgba(76,79,242,0.1)] transition-all duration-200">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="fjenis" class="block text-xs text-muted mb-[7px] font-mono">Jenis Website</label>
+              <select id="fjenis" class="w-full py-3 px-4 rounded-[10px] bg-bg border border-line text-txt font-inter text-sm outline-none focus:border-cyan focus:shadow-[0_0_0_3px_rgba(76,79,242,0.1)] transition-all duration-200">
+                <option>Company Profile</option>
+                <option>Toko Online</option>
+                <option>Kasir & Laundry</option>
+                <option>Bengkel & Otomotif</option>
+                <option>Lainnya / Custom</option>
+              </select>
+            </div>
+            <div>
+              <label for="fpaket" class="block text-xs text-muted mb-[7px] font-mono">Paket Pilihan</label>
+              <select id="fpaket" class="w-full py-3 px-4 rounded-[10px] bg-bg border border-line text-txt font-inter text-sm outline-none focus:border-cyan focus:shadow-[0_0_0_3px_rgba(76,79,242,0.1)] transition-all duration-200">
+                <option value="Belum tahu / minta rekomendasi">Belum tahu, minta rekomendasi</option>
+                <option value="Paket Rintis (Rp 1,5 Juta)">Paket Rintis (Rp 1,5 Juta)</option>
+                <option value="Paket Tumbuh (Rp 3,5 Juta)">Paket Tumbuh (Rp 3,5 Juta)</option>
+                <option value="Paket Sistem (mulai Rp 6 Juta)">Paket Sistem (mulai Rp 6 Juta)</option>
+                <option value="Paket Mahasiswa (mulai Rp 500rb)">Paket Mahasiswa (mulai Rp 500rb)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="fpesan" class="block text-xs text-muted mb-[7px] font-mono">Ceritakan Kebutuhan Anda</label>
+            <textarea id="fpesan" placeholder="Contoh: saya butuh website untuk toko baju online dengan sistem pembayaran QRIS..." class="w-full py-3 px-4 rounded-[10px] bg-bg border border-line text-txt font-inter text-sm outline-none focus:border-cyan focus:shadow-[0_0_0_3px_rgba(76,79,242,0.1)] transition-all duration-200 resize-y min-h-[90px]"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center justify-center gap-2 py-4 rounded-xl border-none cursor-pointer bg-wa text-white font-bold text-sm hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(37,211,102,0.25)] transition-all duration-200">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+            Kirim ke WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTOH PROJECT -->
+  <section class="py-28 relative z-[1] bg-[#f8f7f3] border-t border-b border-line" id="contoh-project">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8 lg:gap-12 items-center">
+        <div class="reveal-el">
+          <span class="inline-flex items-center gap-2 py-1.5 px-3 rounded-full bg-surface border border-line text-[10px] font-semibold tracking-[0.18em] text-cyan uppercase shadow-sm">Contoh Project</span>
+          <h2 class="mt-5 text-[clamp(2rem,3vw,3rem)] font-bold leading-tight mb-4">
+            Landing Page D'Las, destinasi wisata <span class="accent">keluarga di Purwalingga</span>
+          </h2>
+          <p class="text-base text-muted max-w-[620px] mb-6">
+            D'Las hadir sebagai pilihan liburan santai yang cocok untuk keluarga, pasangan, dan kelompok teman. Dengan konsep yang hangat, modern, dan penuh suasana alam, landing page ini menonjolkan pengalaman berwisata yang nyaman, menyenangkan, dan mudah dijangkau.
+          </p>
+          <div class="flex flex-wrap gap-2.5 mb-7">
+            <span class="px-3 py-2 rounded-full bg-white border border-line text-sm font-medium text-txt shadow-sm">Family Friendly</span>
+            <span class="px-3 py-2 rounded-full bg-white border border-line text-sm font-medium text-txt shadow-sm">Wisata Alam</span>
+            <span class="px-3 py-2 rounded-full bg-white border border-line text-sm font-medium text-txt shadow-sm">Booking Mudah</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://d-las.vercel.app/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 py-3.5 px-6 rounded-full font-bold text-sm bg-cyan text-white hover:-translate-y-[3px] hover:shadow-[0_14px_28px_rgba(39,39,242,0.28)] transition-all duration-200">
+              Lihat Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a href="#konsultasi" class="inline-flex items-center gap-2 py-3.5 px-6 rounded-full font-bold text-sm border border-line bg-surface text-txt hover:-translate-y-[3px] hover:border-cyan transition-all duration-200">
+              Buatkan yang Serupa
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-el">
+          <div class="relative overflow-hidden rounded-[28px] border border-line bg-white shadow-[0_30px_80px_rgba(20,20,16,0.10)] p-4 sm:p-5">
+            <div class="relative overflow-hidden rounded-[22px] min-h-[440px] bg-cover bg-center" style="background-image:linear-gradient(180deg, rgba(18,18,18,0.1), rgba(18,18,18,0.68)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80');">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.35),transparent_32%)]"></div>
+              <div class="relative z-10 flex h-full min-h-[440px] flex-col justify-between p-5 sm:p-6">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1.5 text-[11px] font-semibold tracking-[0.15em] text-txt uppercase backdrop-blur-sm">D'LAS</span>
+                  <span class="rounded-full border border-white/30 bg-black/20 px-3 py-1.5 text-[11px] font-medium text-white backdrop-blur-sm">Purbalingga</span>
+                </div>
+
+                <div class="max-w-[330px]">
+                  <p class="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-white/80">Destinasi Wisata Keluarga</p>
+                  <h3 class="text-3xl sm:text-[2.5rem] font-bold text-white leading-[1.05]">Nikmati liburan yang tenang, asyik, dan tak terlupakan.</h3>
+                </div>
+
+                <div class="space-y-3">
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="rounded-2xl bg-white/12 p-3 backdrop-blur-sm border border-white/15">
+                      <div class="text-[10px] uppercase tracking-[0.18em] text-white/75 mb-1">Area</div>
+                      <div class="text-base font-bold text-white">Alam</div>
+                    </div>
+                    <div class="rounded-2xl bg-white/12 p-3 backdrop-blur-sm border border-white/15">
+                      <div class="text-[10px] uppercase tracking-[0.18em] text-white/75 mb-1">Cocok</div>
+                      <div class="text-base font-bold text-white">Keluarga</div>
+                    </div>
+                    <div class="rounded-2xl bg-white/12 p-3 backdrop-blur-sm border border-white/15">
+                      <div class="text-[10px] uppercase tracking-[0.18em] text-white/75 mb-1">Fasilitas</div>
+                      <div class="text-base font-bold text-white">Mudah</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between rounded-2xl bg-white/12 px-4 py-3 backdrop-blur-sm border border-white/15">
+                    <div>
+                      <div class="text-[10px] uppercase tracking-[0.18em] text-white/75">Mulai dari</div>
+                      <div class="text-xl font-bold text-white">Rp 25.000</div>
+                    </div>
+                    <a href="https://d-las.vercel.app/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold text-txt">Pesan Sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KARYA -->
+  <section class="py-28 relative z-[1] bg-surface border-t border-b border-line" id="karya">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="max-w-[640px] mx-auto mb-14 text-center reveal-el">
+        <!-- <span class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-lg bg-surface border border-line font-mono text-xs text-cyan mb-4 before:content-['●'] before:text-wa before:text-[0.6rem]">
+          kreasitech.id/karya
+        </span> -->
+        <h2 class="text-[clamp(1.7rem,3vw,2.4rem)] font-bold mb-3.5">Karya Terbaru Kami</h2>
+        <p class="text-muted text-base">Sebagian proyek yang telah kami kerjakan untuk klien dari berbagai industri.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Karya 1 -->
+        <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="image//project/kelola.png" alt="Website koperasi simpan pinjam" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Kasir Kelolasaji</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">Kasir untuk toko anda</h3>
+
+          </div>
+        </div>
+        <!-- Karya 2 -->
+        <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="image//project/inovasiMG.png" alt="Website toko online fashion" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Toko Online</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">Inovasi MG</h3>
+
+          </div>
+        </div>
+        <!-- Karya 3 -->
+        <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="image/project/tugas.png" alt="Website sistem kasir laundry" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Tugas Mahasiswa</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">Manajemen Keuangan</h3>
+
+          </div>
+        </div>
+        <!-- Karya 4 -->
+        <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="image/project/surat.png" alt="Website event dan wedding organizer" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Website sistem</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">Digital Procurement Kabupaten Bangka Tengah</h3>
+
+          </div>
+        </div>
+        <!-- Karya 5 -->
+        <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="image/project/tugas2.png" alt="Website company profile restoran" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Tugas Mahasiswa</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">Website pembelajaran</h3>
+
+          </div>
+        </div>
+        <!-- Karya 6 -->
+        <!-- <div class="karya-card relative rounded-card overflow-hidden h-[280px] border border-line shadow-main hover:shadow-lg transition-shadow duration-300 reveal-el">
+          <img src="https://picsum.photos/seed/karya-bengkel/600/500" alt="Website booking servis bengkel" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-110">
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-[2]">
+            <span class="font-mono text-[0.7rem] text-cyan mb-1.5 block">Bengkel · Otomotif</span>
+            <h3 class="text-base font-bold mb-2.5 text-white">MontirKu Digital</h3>
+            <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan">Kunjungi Website <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-3.5 h-3.5 transition-transform duration-250 hover:translate-x-[3px] hover:-translate-y-[3px]"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-28 relative z-[1]">
+    <div class="max-w-wrap mx-auto px-7">
+      <div class="final-cta-bg bg-gradient-to-br from-cyan-dim to-surface/60 border border-line rounded-3xl py-[70px] px-10 text-center relative overflow-hidden shadow-lg reveal-el">
+        <h2 class="text-[clamp(1.8rem,3.4vw,2.6rem)] font-bold mb-4 relative">Siap Bawa Bisnis Anda ke Dunia Digital?</h2>
+        <p class="text-muted max-w-[480px] mx-auto mb-8 relative">Website yang tepat bisa jadi karyawan terbaik yang bekerja 24 jam untuk bisnis Anda. Yuk mulai proyeknya sekarang, gratis konsultasi dulu.</p>
+        <a class="relative inline-flex items-center gap-2 py-3.5 px-6 rounded-full font-bold text-sm bg-wa text-white hover:-translate-y-[3px] hover:shadow-[0_14px_28px_rgba(37,211,102,0.28)] transition-all duration-200 border border-transparent" href="https://wa.me/6285961084254?text=Halo%20KreasiTech%2C%20saya%20mau%20mulai%20proyek%20website" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+          Chat Kami di WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="py-14 border-t border-line">
+  <div class="max-w-wrap mx-auto px-7">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr] gap-10 mb-10">
+      <div>
+      <a href="#top" class="flex items-center gap-2">
+  <div class="h-16 w-16 overflow-hidden rounded-full">
+    <img
+      src="image/kreasi.png"
+      alt="KreasiTech Logo"
+      class="h-full w-full object-cover scale-150"
+    >
+  </div>
+</a>
+        <p class="text-muted-2 text-sm mt-3.5 max-w-[280px]">Jasa pembuatan website profesional untuk company profile, toko online, sistem kasir & laundry, hingga bengkel & otomotif. Berbasis di Indonesia, melayani seluruh nusantara.</p>
+      </div>
+      <div>
+        <h4 class="text-sm text-muted mb-4 font-mono font-medium">NAVIGASI</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#layanan" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">Layanan</a></li>
+          <li><a href="#paket" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">Paket Harga</a></li>
+          <li><a href="#karya" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">Karya Kami</a></li>
+          <li><a href="#konsultasi" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">Konsultasi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm text-muted mb-4 font-mono font-medium">KONTAK</h4>
+        <ul class="space-y-2.5">
+          <li><a href="https://wa.me/6285961084254" target="_blank" rel="noopener" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">WhatsApp: 0859-6108-4254</a></li>
+          <!-- <li><a href="mailto:halo@kreasitech.id" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">halo@kreasitech.id</a></li> -->
+          <li><a href="#" class="text-muted-2 text-sm hover:text-cyan transition-colors duration-200">Surakarta, Jawa Tengah</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex justify-between text-muted-2 text-xs flex-wrap gap-2.5">
+      <span>© 2026 KreasiTech. Semua hak cipta dilindungi.</span>
+      <span class="font-mono">dibangun dengan &lt;/&gt; oleh KreasiTech</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WA Float Button -->
+<a class="wa-float fixed bottom-6 right-6 z-[200] w-[60px] h-[60px] rounded-full bg-wa flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)]" href="https://wa.me/6285961084254?text=Halo%20KreasiTech" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" class="w-[30px] h-[30px] text-white relative"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.14.82.84-3.06-.19-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.53-3.69 8.26-8.24 8.26Zm4.51-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.24-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.42.06-.65.31-.22.24-.85.84-.85 2.03 0 1.2.87 2.36 1 2.52.12.17 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+</a>
+
+<script>
+  // Navbar scroll state
+  const navHeader = document.getElementById('navHeader');
+  const navBg = document.getElementById('navBg');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      navHeader.classList.remove('py-5');
+      navHeader.classList.add('py-3');
+      navBg.classList.remove('opacity-0', 'border-transparent');
+      navBg.classList.add('opacity-100', 'border-line');
+    } else {
+      navHeader.classList.remove('py-3');
+      navHeader.classList.add('py-5');
+      navBg.classList.remove('opacity-100', 'border-line');
+      navBg.classList.add('opacity-0', 'border-transparent');
+    }
+  });
+
+  // Mobile burger menu
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('translate-x-full');
+    navLinks.classList.toggle('translate-x-0');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.add('translate-x-full');
+    navLinks.classList.remove('translate-x-0');
+  }));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal-el');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Stagger cards
+  document.querySelectorAll('.service-card').forEach((el,i) => { el.style.transitionDelay = (i*0.08)+'s'; });
+  document.querySelectorAll('.price-card, [class*="price-card"]').forEach((el,i) => { el.style.transitionDelay = (i*0.08)+'s'; });
+  document.querySelectorAll('.karya-card').forEach((el,i) => { el.style.transitionDelay = (i*0.06)+'s'; });
+
+  // Pricing CTA -> Go directly to WhatsApp
+  document.querySelectorAll('.price-cta').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pkg = btn.getAttribute('data-pkg');
+      const text = `Halo KreasiTech, saya tertarik untuk memesan ${pkg}.`;
+      window.open(`https://wa.me/6285961084254?text=${encodeURIComponent(text)}`, '_blank');
+    });
+  });
+
+  // Consult form -> send to WhatsApp
+  document.getElementById('consultForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const nama = document.getElementById('fname').value.trim();
+    const wa = document.getElementById('fwa').value.trim();
+    const jenis = document.getElementById('fjenis').value;
+    const paket = document.getElementById('fpaket').value;
+    const pesan = document.getElementById('fpesan').value.trim();
+    const text = `Halo KreasiTech, saya ingin konsultasi website.%0A%0ANama: ${encodeURIComponent(nama)}%0ANo. WA: ${encodeURIComponent(wa)}%0AJenis Website: ${encodeURIComponent(jenis)}%0APaket: ${encodeURIComponent(paket)}%0AKebutuhan: ${encodeURIComponent(pesan)}`;
+    window.open(`https://wa.me/6285961084254?text=${text}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
